@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>活动</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse " role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="homepage.html">首页</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="message.html">动态</a></li>
+                    <li><a href="activity.html">活动</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="userinfo.html">个人信息</a></li>
+                            <li><a href="contacts.html">好友管理</a></li>
+                            <li class="divider"></li>
+                            <li><a href="index.html">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div class="container-fluid left">
+    <img src="" class="img-rounded img-responsive header "  alt="Responsive image" id="my_header">
+    <h3 class="text-center" id="my_name"></h3>
+    <ul class="nav nav-pills nav-stacked left-menu "id="myTab" role="tablist">
+        <li role="presentation" ><a href="#act1" class="text-center">全部活动</a></li>
+        <li role="presentation"><a href="#act2" class="text-center">已参加</a></li>
+        <li role="presentation"><a href="#act3" class="text-center">已发布</a></li>
+    </ul>
+</div>
+<div class=" title row bg">
+    <h4 class="text-center" style="margin-bottom: 0%">发布活动</h4>
+        <div class="col-md-6 title-bg" >
+              <div class="title-cell row">
+                    <label for="title" class="col-md-2 control-label " style="padding: 2%">名称</label>
+                    <div class="col-md-10" style="padding: 1%">
+                        <input type="text" class="form-control" id="title" >
+                    </div>
+                    <label for="type" class="col-md-2 control-label" style="padding: 2%">类型</label>
+                    <div class="col-md-10" style="padding: 1%">
+                        <select class="form-control" id="type" >
+                            <option>多人</option>
+                            <option>组队</option>
+                            <option>情侣</option>
+                        </select>
+                    </div>
+                    <label for="start" class="col-md-2 control-label" style="padding: 2%">开始</label>
+                    <div class="col-md-10" style="padding: 1%" >
+                        <input type="date" class="form-control" id="start" >
+                    </div>
+                    <label for="end" class="col-md-2 control-label" style="padding: 2%">结束</label>
+                    <div class="col-md-10" style="padding: 1%">
+                        <input type="date" class="form-control" id="end" >
+                    </div>
+                  <label for="num" class="col-md-2 control-label " style="padding: 2%">人数</label>
+                  <div class="col-md-10" style="padding: 1%">
+                      <input type="number" class="form-control" id="num" >
+                  </div>
+                </div>
+        </div>
+        <div class="col-md-6 title-bg" >
+            <div class="title-cell row">
+                <h5 style="margin-top: 1px">活动简介</h5>
+                <textarea class="form-control" rows="6" id="profile"></textarea>
+                <br>
+
+                 <button class="  btn btn-success" style="width: 100%" id="btn_activity">发布</button>
+            </div>
+        </div>
+        <div class="tab-content act-panel col-md-12 act-bg" >
+            <div class="tab-pane " id="act1">
+                <div class="act-cell" id="all_activity_div">
+                    <h4 class="text-center">全部活动</h4>
+                </div>
+            </div>
+            <div class="tab-pane" id="act2">
+                <div class="act-cell" id="participated_activity_div">
+                    <h4 class="text-center">已经参加的活动</h4>
+
+                </div>
+
+            </div>
+            <div class="tab-pane" id="act3">
+                <div class="act-cell" id="my_activity_div">
+                    <h4 class="text-center">我发布的活动</h4>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="page">
+
+</div>
+
+<div class="footer navbar-fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright &copy; <a href="http://expo.bootcss.com">wzh个人作品</a></span> |
+                <span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myjs/common.js"></script>
+<script src="js/myjs/activity.js"></script>
+<script src="js/myjs/status.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(function () {
+            $('#myTab a:first').tab('show');
+        })
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    });
+</script>
+
+</body>
+</html>

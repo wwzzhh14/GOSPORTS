@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse " role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="homepage.html">首页</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="message.html">动态</a></li>
+                    <li><a href="activity.html">活动</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="userinfo.html">个人信息</a></li>
+                            <li><a href="contacts.html">好友管理</a></li>
+                            <li class="divider"></li>
+                            <li><a href="index.html">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+
+<div class="container-fluid left">
+    <img src="" class="img-rounded img-responsive header " alt="Responsive image" id="my_header">
+    <h3 class="text-center" id="name"></h3>
+    <div class="userinfo">
+        <ul class="list-inline">
+            <li><h5>性  别 :</h5></li>
+            <li class="userinfo-cell"><h5  id="sex"><strong ></strong></h5></li>
+        </ul>
+        <ul class="list-inline">
+            <li><h5 >生  日 :</h5></li>
+            <li class="userinfo-cell"><h5 id="birth"><strong ></strong></h5></li>
+        </ul>
+        <ul class="list-inline">
+            <li><h5 >城  市 :</h5></li>
+            <li class="userinfo-cell" ><h5 id="city"><strong ></strong></h5></li>
+        </ul>
+        <ul class="list-inline">
+            <li><h5 >好  友 :</h5></li>
+            <li class="userinfo-cell"><h5 id="friends_num"><strong ></strong></h5></li>
+        </ul>
+        <ul class="list-inline">
+            <li><h5 >总距离:</h5></li>
+            <li class="userinfo-cell"><h5 id="distance"><strong ></strong></h5></li>
+        </ul>
+    </div>
+</div>
+<div class="container-fluid right">
+    <div class="container-fluid row1 row">
+        <div id="carousel-example-generic" class="carousel slide col-md-12 carousel-figure " data-ride="carousel" >
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="image/ex02.jpg" alt="Responsive image">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/ex06.jpg" alt="Responsive image">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="image/ex09.png" alt="Responsive image">
+                    <div class="carousel-caption">
+                        ...
+                    </div>
+                </div>
+
+
+                ...
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class=" col-md-4 row-col" >
+            <div class="row-col-cell" >
+                <!--<img src="image/cycle.png" class="img-rounded img-responsive" alt="Responsive image" style="margin-left: 40%">-->
+                <button type="button" class="btn btn-link text-center" style="margin-left: 20%;margin-right: 20%;width: 60%"><strong class="text-center " style="font-size:20px">骑行</strong></button>
+                <!--<p class="text-center " style="font-size:25px"><strong>骑行</strong></p>-->
+                <ul class="list-inline text-center"  >
+                    <li><h5>今日里程 :</h5></li>
+                    <li ><h5 id="cycling_distance"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center"  >
+                    <li><h5>消耗热量 :</h5></li>
+                    <li ><h5 id="cycling_energy"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center" >
+                    <li><h5>累计里程  :</h5></li>
+                    <li ><h5 id="cycling_total_distance"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center">
+                    <li><h5>单日最高里程 :</h5></li>
+                    <li ><h5 id="cycling_max_distance"><strong ></strong></h5></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class=" col-md-4 row-col">
+            <div class="row-col-cell " >
+                <!--<img src="image/run.png" class="img-rounded img-responsive" alt="Responsive image" style="margin-left: 40%">-->
+                <button type="button" class="btn btn-link text-center" style="margin-left: 20%;margin-right: 20%;width: 60%"><strong class="text-center " style="font-size:20px">跑步</strong></button>
+                <!--<p class="text-center " style="font-size:20px"><strong>跑步里程</strong></p>-->
+                <ul class="list-inline text-center" >
+                    <li><h5>今日里程 :</h5></li>
+                    <li ><h5 id="running_distance"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center"  >
+                    <li><h5>消耗热量 :</h5></li>
+                    <li ><h5 id="running_energy"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center">
+                    <li><h5>累计里程  :</h5></li>
+                    <li ><h5 id="running_total_distance"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center">
+                    <li><h5>单日最高里程 :</h5></li>
+                    <li ><h5 id="running_max_distance"><strong ></strong></h5></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-md-4 row-col">
+            <div class="row-col-cell" >
+
+                <!--<p class="text-center " style="font-size:20px"><strong>步行</strong></p>-->
+                <button type="button" class="btn btn-link text-center" style="margin-left: 20%;margin-right: 20%;width: 60%"><strong class="text-center " style="font-size:20px">步行</strong></button>
+                <ul class="list-inline text-center" >
+                    <li><h5>今日距离 :</h5></li>
+                    <li ><h5 id="walking_distance"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center" >
+                    <li><h5>消耗热量 :</h5></li>
+                    <li ><h5 id="walking_energy"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center">
+                    <li><h5>累计距离  :</h5></li>
+                    <li ><h5 id="walking_total_distance"><strong ></strong></h5></li>
+                </ul>
+                <ul class="list-inline text-center">
+                    <li><h5>单日最高距离 :</h5></li>
+                    <li ><h5 id="walking_max_distance"><strong ></strong></h5></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-6 row-col" style="height: 100%">
+            <div id="distance-chart" class="row-col-cell row" style="height: 100%;padding: 1%" >
+                <!--<h4 class="text-center" style="margin-top: 0% ;margin-bottom: 0% ">你的总运动量可以:</h4>-->
+                <!--<div class="col-md-3" style="height: 150px;background: url('image/eee.png')">-->
+                    <!--<h1 class="text-center" style="margin-top: 90%;color: #f7f7f7" >0</h1>-->
+                <!--</div>-->
+                <!--<div class="col-md-3" style=";height: 150px;background: url('image/bbb.png')">-->
+                    <!--<h1 class="text-center" style="margin-top: 100%;color: #f7f7f7" >0</h1>-->
+                <!--</div>-->
+                <!--<div class="col-md-3" style="height: 150px;background: url('image/ccc.png')">-->
+                    <!--<h1 class="text-center" style="margin-top: 100%;color: #f7f7f7" >0</h1>-->
+                <!--</div>-->
+                <!--<div class="col-md-3" style="height: 150px%;background: url('image/ddd.png')">-->
+                    <!--<h1 class="text-center" style="margin-top: 100%;color: #f7f7f7" >0</h1>-->
+                <!--</div>-->
+
+            </div>
+        </div>
+        <div class="col-md-6 row-col" style="height: 100%">
+            <div  class="row-col-cell" style="height: 100%;padding: 1%">
+                <div style="height: 10%"><h4 class="text-center" style="margin: 0%">本周运动热点分布</h4></div>
+                <div id="week-chart" style="height: 90%"></div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div  class="container-fluid "style="width: 100%;height: 150px;position: relative">
+
+</div>
+
+<div class="footer navbar-fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright &copy; <a href="http://expo.bootcss.com">wzh个人作品</a></span> |
+                <span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/echarts.js"></script>
+<script src="js/myjs/common.js"></script>
+<script src="js/myjs/homepage.js"></script>
+<script src="js/myjs/status.js"></script>
+
+<script type="text/javascript">
+
+
+    $.getJSON("/sports/index.php/sports/getHistoryEnergy", function (mydata) {
+        var myChart = echarts.init(document.getElementById('distance-chart'));
+        var date = [];
+        var data = [Math.random() * 300];
+        for (var i = 1; i < mydata.length; i++) {
+//        var now = new Date(base += oneDay);
+            date.push(mydata[i].date);
+            data.push(mydata[i].energy);
+        }
+
+        option = {
+            tooltip: {
+                trigger: 'axis',
+                position: function (pt) {
+                    return [pt[0], '10%'];
+                }
+            },
+            title: {
+                left: 'center',
+                text: '每日能量消耗(卡路里)',
+            },
+            legend: {
+                top: 'bottom',
+                data:['意向']
+            },
+
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: date
+            },
+            yAxis: {
+                type: 'value',
+                boundaryGap: [0, '100%']
+            },
+            dataZoom: [{
+                type: 'inside',
+                start: 0,
+                end: 10
+            }, {
+                start: 0,
+                end: 10,
+                handleIcon: 'M10.7,11.9v-1.3H9.3v1.3c-4.9,0.3-8.8,4.4-8.8,9.4c0,5,3.9,9.1,8.8,9.4v1.3h1.3v-1.3c4.9-0.3,8.8-4.4,8.8-9.4C19.5,16.3,15.6,12.2,10.7,11.9z M13.3,24.4H6.7V23h6.6V24.4z M13.3,19.6H6.7v-1.4h6.6V19.6z',
+                handleSize: '80%',
+                handleStyle: {
+                    color: '#fff',
+                    shadowBlur: 3,
+                    shadowColor: 'rgba(0, 0, 0, 0.6)',
+                    shadowOffsetX: 2,
+                    shadowOffsetY: 2
+                }
+            }],
+            series: [
+                {
+                    name:'模拟数据',
+                    type:'line',
+                    smooth:true,
+                    symbol: 'none',
+                    sampling: 'average',
+                    itemStyle: {
+                        normal: {
+                            color: 'rgb(255, 70, 131)'
+                        }
+                    },
+                    areaStyle: {
+                        normal: {
+                            color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                offset: 0,
+                                color: 'rgb(255, 158, 68)'
+                            }, {
+                                offset: 1,
+                                color: 'rgb(255, 70, 131)'
+                            }])
+                        }
+                    },
+                    data: data
+                }
+            ],
+            backgroundColor:'#ccc'
+
+        };
+
+        myChart.setOption(option);
+    })
+
+</script>
+<script type="text/javascript">
+
+    $.getJSON("/sports/index.php/sports/getDetailEnergy", function (mydata) {
+        var myChart = echarts.init(document.getElementById('week-chart'));
+        var hours = ['12a', '1a', '2a', '3a', '4a', '5a', '6a',
+            '7a', '8a', '9a','10a','11a',
+            '12p', '1p', '2p', '3p', '4p', '5p',
+            '6p', '7p', '8p', '9p', '10p', '11p'];
+        var days = [];
+        var newDate = new Date();
+        var timestamp = Date.parse(newDate);
+        for(var i=0;i<7;i++){
+            timestamp-=1000*3600*24;
+            newDate.setTime(timestamp);
+            days.push(newDate.toLocaleDateString())
+        }
+        var data=[];
+        for(var i=0;i<7;i++){
+            for (var j=0;j<24;j++){
+                if(i*24+j>=mydata.length){
+                    break;
+                }
+               data.push([i,j,(mydata[i*24+j].energy/10)])
+            }
+
+        }
+
+//        var data = [[0,0,5],[0,1,1],[0,2,0],[0,3,0],[0,4,0],[0,5,0],[0,6,0],[0,7,0],[0,8,0],[0,9,0],[0,10,0],[0,11,2],[0,12,4],[0,13,1],[0,14,1],[0,15,3],[0,16,4],[0,17,6],[0,18,4],[0,19,4],[0,20,3],[0,21,3],[0,22,2],[0,23,5],[1,0,7],[1,1,0],[1,2,0],[1,3,0],[1,4,0],[1,5,0],[1,6,0],[1,7,0],[1,8,0],[1,9,0],[1,10,5],[1,11,2],[1,12,2],[1,13,6],[1,14,9],[1,15,11],[1,16,6],[1,17,7],[1,18,8],[1,19,12],[1,20,5],[1,21,5],[1,22,7],[1,23,2],[2,0,1],[2,1,1],[2,2,0],[2,3,0],[2,4,0],[2,5,0],[2,6,0],[2,7,0],[2,8,0],[2,9,0],[2,10,3],[2,11,2],[2,12,1],[2,13,9],[2,14,8],[2,15,10],[2,16,6],[2,17,5],[2,18,5],[2,19,5],[2,20,7],[2,21,4],[2,22,2],[2,23,4],[3,0,7],[3,1,3],[3,2,0],[3,3,0],[3,4,0],[3,5,0],[3,6,0],[3,7,0],[3,8,1],[3,9,0],[3,10,5],[3,11,4],[3,12,7],[3,13,14],[3,14,13],[3,15,12],[3,16,9],[3,17,5],[3,18,5],[3,19,10],[3,20,6],[3,21,4],[3,22,4],[3,23,1],[4,0,1],[4,1,3],[4,2,0],[4,3,0],[4,4,0],[4,5,1],[4,6,0],[4,7,0],[4,8,0],[4,9,2],[4,10,4],[4,11,4],[4,12,2],[4,13,4],[4,14,4],[4,15,14],[4,16,12],[4,17,1],[4,18,8],[4,19,5],[4,20,3],[4,21,7],[4,22,3],[4,23,0],[5,0,2],[5,1,1],[5,2,0],[5,3,3],[5,4,0],[5,5,0],[5,6,0],[5,7,0],[5,8,2],[5,9,0],[5,10,4],[5,11,1],[5,12,5],[5,13,10],[5,14,5],[5,15,7],[5,16,11],[5,17,6],[5,18,0],[5,19,5],[5,20,3],[5,21,4],[5,22,2],[5,23,0],[6,0,1],[6,1,0],[6,2,0],[6,3,0],[6,4,0],[6,5,0],[6,6,0],[6,7,0],[6,8,0],[6,9,0],[6,10,1],[6,11,0],[6,12,2],[6,13,1],[6,14,3],[6,15,4],[6,16,0],[6,17,0],[6,18,0],[6,19,0],[6,20,1],[6,21,2],[6,22,2],[6,23,6]];
+
+        option = {
+
+            title: {
+                left: 'center',
+                text: '本周运动热点图',
+            },
+            tooltip: {
+                position: 'top'
+            },
+            title: [],
+            singleAxis: [],
+            series: [],
+            backgroundColor:'#ccc'
+        };
+
+        echarts.util.each(days, function (day, idx) {
+            option.title.push({
+                textBaseline: 'middle',
+                top: (idx + 0.5) * 100 / 7 + '%',
+                text: day
+            });
+            option.singleAxis.push({
+                left: 150,
+                type: 'category',
+                boundaryGap: false,
+                data: hours,
+                top: (idx * 100 / 7 + 5) + '%',
+                height: (100 / 7 - 10) + '%',
+                axisLabel: {
+                    interval: 2
+                }
+            });
+            option.series.push({
+                singleAxisIndex: idx,
+                coordinateSystem: 'singleAxis',
+                type: 'scatter',
+                data: [],
+                symbolSize: function (dataItem) {
+                    return dataItem[1] * 4;
+                }
+            });
+        });
+
+        echarts.util.each(data, function (dataItem) {
+            option.series[dataItem[0]].data.push([dataItem[1], dataItem[2]]);
+        });
+        myChart.setOption(option);
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.bg{
+    width: 80%;
+    height: 500px;
+   margin: 10%;
+    background-color: #5e5e5e;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    padding: 10%;
+
+}
+/*.login-form{*/
+    /*margin-top: 10%;*/
+/*}*/

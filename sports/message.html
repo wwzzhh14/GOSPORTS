@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" href="css/message.css">
+    <link rel="stylesheet" href="css/common.css">
+
+</head>
+<body>
+<div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse " role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="homepage.html">首页</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="message.html">动态</a></li>
+                    <li><a href="activity.html">活动</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="userinfo.html">个人信息</a></li>
+                            <li><a href="contacts.html">好友管理</a></li>
+                            <li class="divider"></li>
+                            <li><a href="index.html">退出登录</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<div class="container-fluid left">
+    <img src="" class="img-rounded img-responsive header "  alt="Responsive image" id="my_header">
+    <h3 class="text-center" id="my_name"></h3>
+    <ul class="nav nav-pills nav-stacked left-menu "id="myTab" role="tablist">
+        <li role="presentation" ><a href="#act1" class="text-center">全部动态</a></li>
+        <li role="presentation"><a href="#act2" class="text-center">我的动态</a></li>
+        <li role="presentation"><a href="#act3" class="text-center">与我相关</a></li>
+    </ul>
+</div>
+<div class=" title row bg">
+    <!--<p class="text-center" style="font-size:20px">发布活动</p>-->
+    <h4 class="text-center" style="margin-bottom: 0%">发布动态</h4>
+    <div class="col-md-12 title-bg" >
+        <div class="title-cell">
+            <div class="form-horizontal" role="form">
+                <textarea class="form-control" rows="4" id="content"></textarea>
+                <form id="submit_form" method="post" action="/sports/index.php/file/uploadImages" target="exec_target" enctype="multipart/form-data">
+                    <input type="file" name="upload_file" id="upload_file">        <!-- 添加上传文件 -->
+                </form>
+                <iframe id="exec_target" name="exec_target"></iframe>
+                <div class="form-group form-group-md" style="margin-top: 1%">
+                    <!--<div class="col-md-offset-8 col-md-2">-->
+                        <!--<button class=" btn btn-primary"  style="width: 100%" >添加图片</button>-->
+                    <!--</div>-->
+                    <div class="col-md-2">
+                        <button class="  btn btn-success" style="width: 100%" id="btn_submit" >发布</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content act-panel col-md-12 act-bg" >
+        <div class="tab-pane " id="act1">
+            <div class="act-cell" id="div_message">
+                <h4 class="text-center">全部动态</h4>
+
+            </div>
+        </div>
+        <div class="tab-pane" id="act2">
+            <div class="act-cell" id="div_my_message">
+                <h4 class="text-center">我的动态</h4>
+            </div>
+        </div>
+        <div class="tab-pane" id="act3">
+            <div class="act-cell" id="div_about_me">
+                <h4 class="text-center">与我相关</h4>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="page">
+
+</div>
+<div class="footer navbar-fixed-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <span>Copyright &copy; <a href="http://expo.bootcss.com">wzh个人作品</a></span> |
+                <span><a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/myjs/message.js"></script>
+<script src="js/myjs/common.js"></script>
+<script src="js/myjs/status.js"></script>
+<script>
+    $(document).ready(function(){
+        $(function () {
+            $('#myTab a:first').tab('show');
+        })
+        $('#myTab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    });
+</script>
+
+</body>
+</html>

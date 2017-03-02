@@ -1,0 +1,16 @@
+.act-content{
+    width: 100%;
+    height: auto;
+    background-color: #9d9d9d;
+    padding: 1%;
+    border: 2px dotted slategray;
+    margin-bottom: 10px
+}
+.act-img{
+    height: 200px;
+    width: 100%;
+}
+.act-header{
+    height: 60px;
+    width: 60px;
+}

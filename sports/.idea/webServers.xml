@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="754417e8-7e4e-4070-8ac0-87f35011ab25" name="ubuntu" url="http://182.254.150.201">
+        <fileTransfer host="182.254.150.201" port="21" rootFolder="/home/ubuntu/sports">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
